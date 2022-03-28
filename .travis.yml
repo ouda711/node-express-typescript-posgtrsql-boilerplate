@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - lts/*
+install:
+  - npm install
+script:
+  - npm run lint
+  - npm lint-and-fix
+  - npm start:dev
+  - npm start
+  - npm start test
+  - npm start build
